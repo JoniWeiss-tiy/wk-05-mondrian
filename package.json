@@ -1,11 +1,27 @@
 {
   "name": "wk-05-mondrian",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoniWeiss-tiy/wk-05-mondrian.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JoniWeiss-tiy/wk-05-mondrian/issues"
+  },
+  "homepage": "https://github.com/JoniWeiss-tiy/wk-05-mondrian#readme",
+  "description": "",
+  "devDependencies": {
+    "css-loader": "^0.25.0",
+    "node-sass": "^3.10.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
 }

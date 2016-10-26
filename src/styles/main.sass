@@ -1,0 +1,83 @@
+$mondriaan-red:   #d7151e
+$mondriaan-blue:  #09488a
+$mondriaan-yellow:  #e9d359
+$primary-background: #eee
+$random-color: rgb(random(255),random(255),random(255))
+$border: 12px solid black
+$border-thick: 20px solid black
+$box-shadow-right: inset -12px 0 black
+$box-shadow-bottom: inset 0 -12px black
+$box-shadow-bottom-thick: inset 0 -20px black
+
+=flex-row()
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  flex-wrap: nowrap
+
+=flex-column()
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  flex-wrap: nowrap
+
+body
+  +flex-column
+  align-items: center
+  background-color: $primary-background
+  border: 1px solid black
+  margin: 0
+  padding: 0
+
+.container
+  +flex-column
+  border: 1px dotted slategrey
+  width: 600px
+  height: 612px
+
+.row-1
+  +flex-row
+  box-shadow: $box-shadow-bottom
+  height: 70%
+
+  .row-1-left
+    +flex-column
+    box-shadow: $box-shadow-right
+    width: 30%
+
+  .row-1-left-top
+    box-shadow: $box-shadow-bottom-thick
+    height: 60%
+
+  .row-1-left-bottom
+    height: 40%
+
+  .row-1-right
+    +flex-column
+    background-color: $mondriaan-red
+    box-shadow: $box-shadow-bottom
+    width: 70%
+
+.row-2
+  +flex-row
+  height: 30%
+
+  .row-2-left
+    width: 30%
+    box-shadow: $box-shadow-right
+    background-color: $mondriaan-blue
+
+  .row-2-center
+    width: 55%
+    box-shadow: $box-shadow-right
+
+  .row-2-right
+    width: 15%
+
+    .row-2-right-top
+      height: 60%
+      box-shadow: $box-shadow-bottom-thick
+
+    .row-2-right-bottom
+      height: 40%
+      background-color: $mondriaan-yellow
